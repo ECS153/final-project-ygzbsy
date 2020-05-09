@@ -1,10 +1,20 @@
 <template>
   <div id="app">
+    <!-- <img src="./assets/logo.png"> -->
+    <navi/>
   </div>
 </template>
 
 <script>
+// import HelloWorld from './components/HelloWorld'
+import navi from './components/navigator'
 
+export default {
+  name: 'App',
+  components: {
+    navi
+  }
+}
 </script>
 
 <style>
