@@ -26,7 +26,8 @@
 
 <style>
   .nav{
-    margin-left: 800px;
+    float: right;
+    /* margin-left: 800px; */
     width:250px;
   }
 </style>

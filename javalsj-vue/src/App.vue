@@ -2,17 +2,20 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <navi/>
+    <login/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld'
 import navi from './components/navigator'
+import login from './components/login'
 
 export default {
   name: 'App',
   components: {
-    navi
+    navi,
+    login
   }
 }
 </script>
