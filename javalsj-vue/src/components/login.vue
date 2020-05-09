@@ -25,6 +25,7 @@
         }
       };
       return {
+
         ruleForm: {
           pass: ''
         },
@@ -52,6 +53,7 @@
 
 <style>
 .login_form{
+  visibility:hidden;
   width:100%;
   padding-top:10%;
   clear:right;
@@ -61,5 +63,8 @@
 }
 #login-button{
   margin-left:30%;
+}
+.active{
+  visibility: visible;
 }
 </style>
