@@ -1,4 +1,4 @@
-<template><div class = "login_form">
+<template><div class = "login_form" :class = "log_dis">
 <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
   <el-form-item label="Email" prop="email">
     <el-input type="email" v-model="ruleForm.email" autocomplete="off"></el-input>
@@ -25,7 +25,7 @@
         }
       };
       return {
-
+        log_dis:'',
         ruleForm: {
           pass: ''
         },
@@ -60,6 +60,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 2;
 }
 #login-button{
   margin-left:30%;
