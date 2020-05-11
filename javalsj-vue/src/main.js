@@ -8,12 +8,13 @@ import App from './App'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+export const bus = new Vue();
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   components: { App },
   template: '<App/>'
-}).$mount('#app')
+})
 
 // var Ctor = Vue.extend(Main)
 // new Ctor().$mount('#app')

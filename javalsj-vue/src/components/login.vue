@@ -1,4 +1,4 @@
-<template><div class = "login_form" :class = "log_dis">
+<template><div class = "login_form">
 <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
   <el-form-item label="Email" prop="email">
     <el-input type="email" v-model="ruleForm.email" autocomplete="off"></el-input>
@@ -14,6 +14,7 @@
 <script>
   export default {
     data() {
+
       var validatePass = (rule, value, callback) => {
         if (value === '') {
           callback(new Error('Please enter the password'));
@@ -25,7 +26,6 @@
         }
       };
       return {
-        log_dis:'',
         ruleForm: {
           pass: ''
         },
@@ -53,20 +53,20 @@
 
 <style>
 .login_form{
-  visibility:hidden;
+  /* visibility:hidden; */
   width:100%;
   padding-top:10%;
   clear:right;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  z-index: 2;
+  /* position: absolute; */
+  /* z-index: 2; */
 }
 #login-button{
   margin-left:30%;
 }
-.active{
+/* .active{
   visibility: visible;
-}
+} */
 </style>

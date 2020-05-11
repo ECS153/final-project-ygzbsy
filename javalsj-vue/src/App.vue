@@ -2,9 +2,9 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <navi/>
-    <div class = "layout">
-      <login/>
-      <signup/>
+    <!-- <div class = "layout"> -->
+      <!-- <login/>
+      <signup/> -->
     </div>
   </div>
 </template>
@@ -12,14 +12,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld'
 import navi from './components/navigator'
-import login from './components/login'
-import signup from './components/signup'
+// import login from './components/login'
+// import signup from './components/signup'
 export default {
   name: 'App',
   components: {
-    navi,
-    login,
-    signup
+    navi
+    // login,
+    // signup
   },
   method:{
     handleSelect(key, keyPath) {

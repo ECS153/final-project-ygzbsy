@@ -1,4 +1,43 @@
-<template><div class = nav>
+
+<template>
+  <el-tabs v-model="activeName" @tab-click="handleClick" >
+    <el-tab-pane label="Sign In" name="first"><login/></el-tab-pane>
+    <el-tab-pane label="Sign up" name="second"><signup/></el-tab-pane>
+    <el-tab-pane label="GitHub" name="third"></el-tab-pane>
+
+
+  </el-tabs>
+</template>
+<script>
+import login from './login'
+import signup from './signup'
+  export default {
+    components: {
+      login,
+      signup
+    },
+    data() {
+      return {
+        activeName: 'first'
+      };
+    },
+    methods: {
+      handleClick(tab, event) {
+        console.log(tab, event);
+      }
+    }
+  };
+</script>
+<style>
+.el-tabs__header .is-top{
+  /* float: right; */
+  /* margin-left: 800px; */
+  /* width:250px; */
+}
+</style>
+
+
+<!-- <template><div class = nav>
 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
   <el-menu-item index="1">Sign in</el-menu-item>
   <el-menu-item index="2">Sign up</el-menu-item>
@@ -30,4 +69,4 @@
     /* margin-left: 800px; */
     width:250px;
   }
-</style>
+</style> -->

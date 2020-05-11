@@ -1,4 +1,4 @@
-<template><div class = "signup-form" :class = "sin_dis">
+<template><div class = "signup-form">
 <el-form :model="dynamicValidateForm" ref="dynamicValidateForm" label-width="150px" class="demo-dynamic">
   <el-form-item prop="email" label="Email"
     :rules="[
@@ -9,7 +9,7 @@
     <el-input v-model="dynamicValidateForm.email"></el-input>
   </el-form-item>
 
-  <el-form-item label="Password" prop="pass" :rules="[{required: true}]">
+  <el-form-item label="Password" prop = "pass" :rules="[{required: true}]">
     <el-input type="password" v-model="dynamicValidateForm.pass" autocomplete="off"></el-input>
   </el-form-item>
   <el-form-item label="Password Confirm" prop="checkPass" :rules="[{required: true}]">
@@ -26,7 +26,6 @@
   export default {
     data() {
       return {
-        sin_dis: '',
         dynamicValidateForm: {
           email: ''
         }
@@ -50,19 +49,18 @@
 
 <style>
 .signup-form{
-  visibility:hidden;
   width:100%;
   padding-top:10%;
   clear:right;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  z-index: 1;
+  /* position: absolute; */
+  /* z-index: 1; */
 }
-.active{
+/* .active{
   visibility: visible;
-}
+} */
 #signup-button{
   margin-left:30%;
 }
