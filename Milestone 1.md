@@ -1,6 +1,6 @@
 # Milestone 1
 
-#### 	Shouliang Gong
+#### Shouliang Gong
 
 1. Complete：
 
@@ -14,19 +14,29 @@
 
    Not able to verify with the reCAPTCHA. How to test our login system as an attacker. 
 
-   #### Yuqi Yang
+   
 
-   1. Did a survey on security features, learned a new front-end development frame VUE from scratch, set up the develop environment, and built initial web pages with basic features.
-   2. Settle down API for server, and get system work with basic features.
-   3. Since I am brand new to VUE, it took me a long time to get familiar with the grammar and logic of VUE. 
+#### Yuqi Yang
 
-   #### Wulong Lyu
+1. Did a survey on security features, learned a new front-end development frame VUE from scratch, set up the develop environment, and built initial web pages with basic features.
 
-   1. Do the survey of Spring Security features such as question check.
-   2. Finish the function of the question check, and learn the knowledge of Spring Boot and Framework.
-   3. Not familiar with Spring Framework’s features such as testing and data access.
+2. Settle down API for server, and get system work with basic features.
 
-   #### Xinlin Shuai
+3. Since I am brand new to VUE, it took me a long time to get familiar with the grammar and logic of VUE. 
+
+   
+
+#### Wulong Lyu
+
+1. Do the survey of Spring Security features such as question check.
+
+2. Finish the function of the question check, and learn the knowledge of Spring Boot and Framework.
+
+3. Not familiar with Spring Framework’s features such as testing and data access.
+
+   
+
+#### Xinlin Shuai
 
 1. Review the knowledge in the front-end (JS, html, vue), and build the framework of the front-end in vue.
 2. Add more functions to the web, and finish the feature of location.
