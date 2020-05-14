@@ -5,19 +5,21 @@
     <!-- <div class = "layout"> -->
       <!-- <login/>
       <signup/> -->
-    </div>
+    <test/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld'
 import navi from './components/navigator'
+import test from './components/test'
 // import login from './components/login'
 // import signup from './components/signup'
 export default {
   name: 'App',
   components: {
-    navi
+    navi,
+    test
     // login,
     // signup
   },
