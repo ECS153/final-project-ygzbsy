@@ -18,6 +18,8 @@
 
 #### Yuqi Yang
 
+（PR: https://github.com/ECS153/final-project-ygzbsy/pull/9#issue-417752588）
+
 1. Did a survey on security features, learned a new front-end development frame VUE from scratch, set up the develop environment, and built initial web pages with basic features.
 
 2. Settle down API for server, and get system work with basic features.
@@ -27,6 +29,8 @@
    
 
 #### Wulong Lyu
+
+（PR: https://github.com/ECS153/final-project-ygzbsy/pull/12#issue-418363566）
 
 1. Do the survey of Spring Security features such as question check.
 
@@ -38,6 +42,14 @@
 
 #### Xinlin Shuai
 
+(PR: https://github.com/ECS153/final-project-ygzbsy/pull/4#issue-417088813)
+
 1. Review the knowledge in the front-end (JS, html, vue), and build the framework of the front-end in vue.
 2. Add more functions to the web, and finish the feature of location.
 3. Not familiar with coding in the front-end and the framework of vue.
+
+
+
+#### Video:
+
+https://drive.google.com/file/d/1WQENoV7lMks88_rcq7GM9fOn5b2UDXst/view?usp=sharing
