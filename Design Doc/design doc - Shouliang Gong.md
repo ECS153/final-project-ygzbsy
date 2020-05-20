@@ -52,19 +52,19 @@ The Volunabilities part may include bypass “slider CAPTCHA” with JS and Pupp
 
 My goal for this week is to implement google reCAPTCHA on the register page. Google reCAPTCHA can be used to recognize the robots. In this way, we can protect users' privacy. 
 
-<img src="/Users/gongshouliang/Documents/UC Davis/2020 Spring/ECS 153/Project/Image/google reCAPTCHE.png" alt="google reCAPTCHE" style="zoom: 33%;" />
+<img src="./Image/google reCAPTCHE.png" alt="google reCAPTCHE" style="zoom: 33%;" />
 
 ## week 8 - May, 15 to May, 21
 
 My goal for this week is the implement Login Attempts limitation on the login page. Our account could be break in if the attackers have infinite times to try the actual password, which leaves a vulnerability to our system. So I want to add a login attempts limitation feature. Specifically, when we hit the limit amount of login, the user can’t try again, and the account will be locked. I'll set the limit amount of login to be three, and will give the notification to the user including the date of the last attempt.
 
-<img src="/Users/gongshouliang/Documents/UC Davis/2020 Spring/ECS 153/Project/Image/login attempts limit.png" alt="design_doc_1" style="zoom:50%;" />
+<img src="./Image/login attempts limit.png" alt="design_doc_1" style="zoom:50%;" />
 
 I have finished setting up the MySQL contains the number of attempts, data of the last try, etc. In the backend, I have finished the DAO Classes, DAOImpl Classes, UserAttempts Classes, etc. However, I'm stuck on how to retrieve the database based on the username and update the date and the number of attempts. I planned to use some functions like `getJdbcTemplate().update`, but there is some conflict between Oracle and Spring Boot. I'll keep trying with my teammates for the next few days. 
 
 
 
-<img src="/Users/gongshouliang/Documents/UC Davis/2020 Spring/ECS 153/Project/Image/database.png" alt="design_doc_1" style="zoom:50%;" />
+<img src="./Image/database.png" alt="design_doc_1" style="zoom:50%;" />
 
 
 
