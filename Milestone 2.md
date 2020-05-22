@@ -16,11 +16,11 @@ Problems: I planned to use some functions like the getJdbcTemplate().update, but
 
 #### Yuqi Yang
 
-(PR:	)
+(PR: https://github.com/ECS153/final-project-ygzbsy/pull/9#issue-417752588)
 
 (Design DOC:		)
 
-Done: Implement the feature of one account could only login onece.
+Done: Implement the feature of one account could only login once.
 
 Will do: fix the bug and collaborate with others to implement other features.
 
@@ -28,7 +28,7 @@ Problems: Being cut out from login, the previous one couldn’t automatically re
 
 #### Wulong Lyu
 
-(PR:	)
+(PR: https://github.com/ECS153/final-project-ygzbsy/pull/12#issue-418363566)
 
 (Design DOC:		)
 
@@ -42,7 +42,7 @@ Problems: There are some bugs in the code but still not fixed and have little un
 
 #### Xinlin Shuai
 
-(PR:	)
+(PR: https://github.com/ECS153/final-project-ygzbsy/pull/4#issue-417088813)
 
 (Design DOC:		)
 
@@ -56,3 +56,4 @@ Problems: The front end uses bootstrap to modify, and not familiar with spring.
 
 #### Video:
 
+https://drive.google.com/file/d/1hMygZCaM5ficf99lf4tq7LCOED6BxTEO/view?usp=sharing
