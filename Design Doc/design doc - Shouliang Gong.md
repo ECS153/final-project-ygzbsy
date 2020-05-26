@@ -80,6 +80,6 @@ My goal for this week is to implement the password encryption in the database. A
 
 When users register a new account, in our database, his password will be stored as encrypted instead of the original string. 
 
-![database](./Image/encrypt password.png)
+<img src="./Image/encrypt password.png" alt="design_doc_1"  />
 
 As the image of Database goes, you can see the passwords have been encrypted. Consequently, even though attackers break into our database, they still can get the original password directly. 
