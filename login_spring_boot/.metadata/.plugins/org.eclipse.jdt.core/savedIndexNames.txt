@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+/Users/mac/Desktop/final-project-ygzbsy/login_spring_boot/.metadata/.plugins/org.eclipse.jdt.core
+3860113537.index
+2004600464.index
+2171505704.index
+1295111223.index
+3650817109.index
+4046073632.index
+1583958795.index
+3005775987.index
+1271342938.index
+3957545424.index
+1931998465.index
+1310078302.index
+454247607.index
+2825866429.index
+3692720234.index
+2418981844.index
+824309646.index
+2265843187.index

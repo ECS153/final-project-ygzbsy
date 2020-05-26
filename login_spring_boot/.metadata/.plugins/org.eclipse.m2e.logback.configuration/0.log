@@ -1,0 +1,12 @@
+2020-05-26 13:53:18,388 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-05-26 13:55:32,429 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.luv2code.springsecurity:spring-security-custom-user-registration-demo-thymeleaf-spring-boot:0.0.1-SNAPSHOT @ /Users/mac/Desktop/final-project-ygzbsy/spring-v2/pom.xml.
+2020-05-26 13:55:34,763 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-security-custom-user-registration-demo-thymeleaf-spring-boot/src/main/java
+2020-05-26 13:55:34,765 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-security-custom-user-registration-demo-thymeleaf-spring-boot/src/main/resources
+2020-05-26 13:55:34,766 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-security-custom-user-registration-demo-thymeleaf-spring-boot/src/main/resources
+2020-05-26 13:55:34,768 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-security-custom-user-registration-demo-thymeleaf-spring-boot/src/test/java
+2020-05-26 13:55:35,149 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2020-05-26 13:55:38,363 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-26 13:55:38,373 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-26 13:55:38,434 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2020-05-26 13:55:38,453 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-26 13:55:38,453 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mac/Desktop/final-project-ygzbsy/spring-v2/src/test/resources
