@@ -76,7 +76,7 @@ I have finished setting up the MySQL contains the number of attempts, data of th
 
 ## Week 9 - May, 22 to May, 28
 
-My goal for this week is to implement the password encryption in the database. Although MySQL offers protection to our database, attackers could still break into our system, thus leaking the username and password. Besides, some users may use the same username and password for multiple applications. Therefore, extra protection should be placed on the database. This is where password-encryption kicks in. 
+My goal for this week is to implement the password encryption in the database. Although MySQL offers protection to our database, attackers could still break into our system, thus accessing the username and password. Besides, some users may use the same username and password for multiple applications. Therefore, extra protection should be placed on the database. This is where password-encryption kicks in. In our backend, we use BCrypt to realize this feature.
 
 When users register a new account, in our database, his password will be stored as encrypted instead of the original string. 
 
