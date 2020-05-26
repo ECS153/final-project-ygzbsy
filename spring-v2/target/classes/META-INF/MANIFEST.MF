@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Built-By: mac
+Build-Jdk: 12.0.1
+Implementation-Title: spring-security-custom-user-registration-demo-thym
+ eleaf-spring-boot
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.luv2code.springsecurity
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/spring-security-custom-user-registration-demo-thymeleaf
+ -spring-boot
+Created-By: Maven Integration for Eclipse
+
