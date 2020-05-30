@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
 	@Transactional
 	public void save(CrmUser crmUser) {
 		User user = new User();
-		 // assign user details to the user object
+		// assign user details to the user object
 		user.setUserName(crmUser.getUserName());
 		user.setPassword(passwordEncoder.encode(crmUser.getPassword()));
 		user.setFirstName(crmUser.getFirstName());
@@ -52,6 +52,7 @@ public class UserServiceImpl implements UserService {
 		user.setEmail(crmUser.getEmail());
 
 		// give user default role of "employee"
+		System.out.println("aaaaaaaaaaa");
 		user.setRoles(Arrays.asList(roleDao.findRoleByName("ROLE_EMPLOYEE")));
 
 		 // save user in the database

@@ -16,7 +16,9 @@ public class CustomSessionInformationExpiredStrategy implements SessionInformati
 		 HttpServletResponse response = event.getResponse();
 	        response.setStatus(HttpStatus.UNAUTHORIZED.value());
 	        response.setContentType("application/json;charset=utf-8");
-	        response.getWriter().write("Your account has been logged in elsewhere, and the current login has been terminated. If the password is damaged, please change the password immediately!");
+	        
+	        response.sendRedirect("/showMyLoginPage?expired");
+//	        getWriter().write("Your account has been logged in elsewhere, and the current login has been terminated. If the password is damaged, please change the password immediately!");
 	}
 
 }
