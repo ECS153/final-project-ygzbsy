@@ -54,13 +54,9 @@
 	<hr>
 	
 	
-	<!-- Add a logout button -->
-	<form th:action="@{/logout}" 
-			   method="POST">
-	
-		<input type="submit" value="Logout" />
-	
-	</form>	
+	<div>
+		<a th:href="@{/showMyLoginPage?logout}" class="button" role="button" aria-pressed="true" style="text-align:center">Log Out</a>
+	</div>
 			
 </body>
 

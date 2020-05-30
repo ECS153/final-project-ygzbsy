@@ -43,7 +43,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.addFilterBefore(loginAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
-        .exceptionHandling()
+        .exceptionHandling().accessDeniedPage("/access-denied")
 		.authenticationEntryPoint(loginUrlAuthenticationEntryPoint())
 		.and()
 		.authorizeRequests()
@@ -55,9 +55,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 //				.successHandler(customAuthenticationSuccessHandler)
 //				.permitAll()
 			.and()
-			.logout().permitAll()
-			.and()
-			.exceptionHandling().accessDeniedPage("/access-denied");
+			.logout().permitAll();
 		http.sessionManagement().maximumSessions(1)
 		.expiredSessionStrategy(sessionInformationExpiredStrategy);		
 		

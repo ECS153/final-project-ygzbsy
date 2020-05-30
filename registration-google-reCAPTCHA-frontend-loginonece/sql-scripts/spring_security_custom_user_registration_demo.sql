@@ -25,9 +25,6 @@ CREATE TABLE `user` (
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `accountNonExpired` TINYINT NOT NULL DEFAULT 1 ,
-  `accountNonLocked` TINYINT NOT NULL DEFAULT 1 ,
-  `credentialsNonExpired` TINYINT NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
@@ -104,7 +101,4 @@ VALUES
 (2, 2),
 (3, 1),
 (3, 2),
-(3, 3);
-
--- Table for login attempts
-DROP TABLE IF EXISTS `user_attempts`;
+(3, 3)
