@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Reference Bootstrap files -->
+	<link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" th:href="@{/login.css}">
+	
+</head>
+
+<body>
+
+
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Forgot Password</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="info">
+								
+					<!-- Check for login error -->																	
+					<div th:if="${param.error}"  class="bad">
+						Invalid username and password.
+					</div>
+					
+					<div th:if="${param.expired}" 
+					class="bad">
+					Your account has been logged in elsewhere, and the current login has been terminated. If the password is damaged, please change the password immediately!
+					</div>
+					
+				
+					<div th:if="${param.code_error}" class="bad">
+						Incorrect verification code.
+					</div>
+		
+				
+					<!-- Check for logout -->
+					<div th:if="${param.logout}"  class="good">
+						You have been logged out.
+					</div>
+									
+				</div>
+				<form  th:action="@{/authenticate}"  method="POST">
+					<div class="group">
+						<label for="user" class="label">Username or Email</label>
+						<input id="user" type="text" class="input" name="username">
+						<!-- <input type="text" name="username" placeholder="username" class="form-control"> -->
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password" name="password">
+						<!-- <input type="password" name="password" placeholder="password" class="form-control" > -->
+					</div>
+					
+				
+					<div style="   display: flex; align-items: center; justify-content: center; height: 70px">
+						<div class = "code_veri"><input style="color: black;margin-right:30px;width: 150px" type = "text" name = "code" 
+						placeholder ="Code Verification"></div>
+						<div class = "code_vari"><img src="" th:src="@{/randCode}" 
+						title = "Click to change the code"></div>
+					</div>
+					
+
+
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
+					</div>
+					
+					<div class="group">
+						<a th:href="@{/register/showRegistrationForm}" class="button" role="button" aria-pressed="true" style="text-align:center">Register New User</a>
+					</div>
+					
+					
+				</form>
+				
+				
+				<!--
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				-->
+				
+			</div>
+			
+			<div class="for-pwd-htm">
+				<div class="group">
+					<label for="user" class="label">Username or Email</label>
+					<input id="user" type="text" class="input"> 
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Reset Password">
+				</div>
+				<div class="hr"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

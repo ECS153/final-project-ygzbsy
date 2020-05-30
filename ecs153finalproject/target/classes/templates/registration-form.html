@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	
+	<title>Register New User Form</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Reference Bootstrap files -->
+	<link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" th:href="@{/reg.css}">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+    <title>reCAPTCHA demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+
+<div class="login-wrap">
+	<div class="login-html">
+		<p class="logo"> Register New User</p>
+		
+		<div class = "login-form">
+			<form th:action="@{/register/processRegistrationForm}" 
+						  	   th:object="${crmUser}" method="POST">
+
+				<div class ="info">
+					<div th:if="${registrationError}" class="bad">
+							<span th:text="${registrationError}"></span>
+					</div>	
+				</div>
+
+						  	   
+				<!-- USER NAME -->		  	   
+				<div class='group'>
+					<label class="label"> Username </label>
+					<input type="text" th:field="*{userName}"  class="input" />
+				</div>
+				
+				<div th:if="${#fields.hasErrors('userName')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('userName')}" th:text="'User name ' + ${err}" />
+					</ul>						
+				</div>	
+				
+				<!-- Email -->
+				<div class='group'>
+					<label class="label"> Email Address </label>
+					<input type="text" th:field="*{email}"  class="input" />
+				</div>
+				<div th:if="${#fields.hasErrors('email')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('email')}" th:text="'Email ' + ${err}" />
+					</ul>						
+				</div>				
+				
+				
+				<!-- Password -->
+				<div class='group'>
+					<label class="label"> Password </label>
+					<input type="password" th:field="*{password}"  class="input" />
+				</div>
+				<div th:if="${#fields.hasErrors('password')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('password')}" th:text="'Password ' + ${err}" />
+					</ul>						
+				</div>
+
+				<!-- Confirm Password -->
+				<div class='group'>
+					<label class="label"> Confirm Password </label>
+					<input type="password" th:field="*{matchingPassword}"  class="input" />
+				</div>
+				<div th:if="${#fields.hasErrors('matchingPassword')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('matchingPassword')}" th:text="'Password ' + ${err}" />
+					</ul>						
+				</div>				
+
+				<!-- First Name -->
+				<div class='group'>
+					<label class="label"> First Name </label>
+					<input type="text" th:field="*{firstName}"  class="input" />
+				</div>
+				<div th:if="${#fields.hasErrors('firstName')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('firstName')}" th:text="'First name ' + ${err}" />
+					</ul>						
+				</div>
+				
+				<!-- Last Name -->
+				<div class='group'>
+					<label class="label"> Last Name </label>
+					<input type="text" th:field="*{lastName}"  class="input" />
+				</div>
+				<div th:if="${#fields.hasErrors('lastName')}" class="bad">
+					<ul>
+						<li th:each="err : ${#fields.errors('lastName')}" th:text="'Last name ' + ${err}" />
+					</ul>						
+				</div>
+			
+			
+				<div class="g-recaptcha" data-sitekey="6LeAdvYUAAAAAOaaP704dYz0Csck09xei48ZGP8c" 
+							style="   display: flex; align-items: center; justify-content: center; ">
+				</div>
+				<br/>
+				
+				<div class="group">
+					<button type="submit" class="button">Register</button>
+				</div>
+				
+			</form>
+		</div>
+		<div>
+		<p style="text-align:center;margin-top:10px;">
+			Already has an account? <a th:href="@{/showMyLoginPage}">click here</a></p>
+		</div>
+	
+	</div>
+</div>
+
+</body>
+</html>
